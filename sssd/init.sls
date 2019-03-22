@@ -5,7 +5,7 @@
 
 sssd:
   pkg.installed:
-    - pkgs: {{ sssd_settings.lookup.pkgs }}
+    - pkgs: {{ sssd_settings.lookup.pkgs|json }}
 
 {% if sssd_settings.config.manage == True %}
 {{ sssd_settings.lookup.locations.config_file }}:
