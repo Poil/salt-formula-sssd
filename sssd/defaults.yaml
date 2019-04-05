@@ -1,3 +1,4 @@
+---
 sssd:
   lookup:
     user: root
@@ -8,9 +9,9 @@ sssd:
       conf_d_dir: '/etc/sssd/conf.d'
       ca_certs_dir: '/etc/sssd/certs'
   service:
-    manage: False
+    manage: false
   config:
-    manage: False
+    manage: false
     ca_certificates: ''
     options:
       sssd:
